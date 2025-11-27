@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* ESTILOS DEL CARTEL */
+  .db-aviso-container {
+    /* Puedes cambiar este color por el de Docentes Brown */
+    --color-marca: #2c3e50; 
+    --color-acento: #e74c3c; /* Color para destacar detalles */
+    
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo gris muy suave */
+    border: 2px solid var(--color-marca);
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .db-icon-svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    fill: var(--color-marca);
+    opacity: 0.8;
+  }
+
+  .db-titulo {
+    color: var(--color-marca);
+    font-size: 2rem; /* Tamaño grande */
+    font-weight: 800;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .db-subtitulo {
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .db-linea {
+    width: 60px;
+    height: 5px;
+    background-color: var(--color-acento);
+    margin: 20px auto 0 auto;
+    border-radius: 3px;
+  }
+
+  /* Ajuste para celulares */
+  @media (max-width: 600px) {
+    .db-titulo {
+      font-size: 1.5rem;
+    }
+    .db-icon-svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="db-aviso-container">
+  <svg class="db-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12,2A10,10 0 1,0 22,12A10,10 0 0,0 12,2Mm0,18a6,6 0 1,1 6-6A6,6 0 0,1 12,18M12.5,7H11v6l5.2,3.2.8-1.3-4.5-2.7Z"/>
+  </svg>
+
+  <h1 class="db-titulo">Información aún no publicada</h1>
+  
+  <p class="db-subtitulo">
+    Estamos aguardando la comunicación oficial por parte de la <br>
+    <strong>Secretaría de Asuntos Docentes (SAD)</strong>.
+  </p>
+
+  <div class="db-linea"></div>
+</div>
+</body>
+</html>
